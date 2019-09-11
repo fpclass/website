@@ -1,0 +1,438 @@
+<html>
+<head>
+	<!-- Put custom CSS, Javascript, etc. here -->
+	<style type="text/css">
+		a:link, a:visited { color: #de5333; text-decoration-color: #de5333; -webkit-text-decoration-color: #de5333; }
+		
+		a.semihidden:link, a.semihidden:visited { color: rgb(180, 180, 180); text-decoration-color: rgb(180, 180, 180); -webkit-text-decoration-color: rgb(180, 180, 180); }
+	</style>
+</head>
+<body>
+
+<h3>Module description</h3>
+
+<p> In <a href="http://www2.warwick.ac.uk/fac/sci/dcs/teaching/modules/cs118/">CS118</a> you have learnt to write programs in the object-oriented style using Java. However, Java is just one of many programming languages and object-oriented programming is just one of many programming paradigms. You may think of programming languages as tools: a hammer is different from a screwdriver and both serve different purposes which they are good at. Programming languages are the same: different languages exist for different purposes and it is easier or harder to accomplish certain tasks in one or the other. As a Computer Scientist, you need to know which tools are at your disposal and when to use them. </p>
+
+<p> In this module, you will learn about the functional programming paradigm. For this, we will use <a href="https://www.haskell.org/">Haskell</a>, which is a lazy, purely functional programming language. Writing programs in Haskell is very different than writing programs in Java and over the course of this module you will learn how to do that. In turn, this adds a powerful tool to your programming arsenal, you will gain a much deeper understanding of programming, and skills from this module can be applied in other languages, functional or not. In other words, you will become a better programmer! </p>
+
+<h3>Module guide</h3>
+
+<div style="float: right; padding-left: 20px; padding-right: 20px;"><a href="cs141.pdf"><img src="application-pdf.png" style="width: 100px;" border="0" /></a></div>
+
+<p>There is a module guide for this module which contains all key information such as recommended books, an overview of the lectures, deadlines, and so on. It also contains guidance on the different tools we we use and what they are for. Finally, the module guide contains the exercises for the labs. You can <a href="cs141.pdf">download it here</a>. For <i>The Guide to Functional Programming - Edition</i>, you can view <a href="https://github.com/fpclass/guide/milestone/1?closed=1">a list of errata on GitHub</a> or you can report a problem by <a href="https://github.com/fpclass/guide/issues/new?milestone=1920-errata">opening an issue</a>. The LaTeX sources for the coursework descriptions are available on <a href="https://github.com/fpclass/guide">GitHub</a>. If you spot any typos, other mistakes, or want to improve something, feel free to submit a <a href="https://help.github.com/articles/about-pull-requests/">pull request</a>! </p>
+
+<h3>Slack</h3>
+
+<p>There is a slack team for this module. You can sign up for it with your <code>@warwick.ac.uk</code> email address at <a href="https://join.slack.com/t/fpclass/signup">https://join.slack.com/t/fpclass/signup</a>. You can use this to ask questions about the coursework or programming more generally. You can also ask us questions during lectures via Slack if you prefer that approach over shouting your question at me! For all this, you can choose to remain anonymous as well as you are not required to sign up with your real name.</p>
+
+<h3>Lectures</h3>
+
+<p> There are approximately 30 lectures in Term 2 and there will be additional revision lectures in Term 3. Lectures take place on Mondays, Tuesdays, and Wednesdays: </p>
+
+<table>
+  <tr>
+    <th style="text-align: center; border-right: 1px solid rgb(221, 221, 221); border-top: 0;"><i>Monaday</i> </th>
+    <th style="text-align: center; border-right: 1px solid rgb(221, 221, 221); border-top: 0;"><i>Tuesday</i> </th>
+    <th style="text-align: center; border-right: 1px solid rgb(221, 221, 221); border-top: 0;"><i>Wednesday</i> </th>
+  </tr>
+  <tr>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);">4pm in <a href="http://campus-cms.warwick.ac.uk/share/a251fd23a381968e811a540df35d9b02">Woods-Scawen</a> </td>
+    <td rowspan="4" style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);">6pm in <a href="http://campus-cms.warwick.ac.uk/share/41e8ad634ab9bdca30362b9b99234665">L3</a> </td>
+    <td rowspan="2" style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);">12pm in <a href="http://campus-cms.warwick.ac.uk/share/a251fd23a381968e811a540df35d9b02">Woods-Scawen</a> </td>
+  </tr>
+</table>
+
+<p> I will aim to make lecture slides available in good time before each respective lecture, but note that the slides may be subject to changes until before the lecture takes place.</p>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Topic</th>
+    <th>Slides</th>
+    <th>Code</th>
+    <th>Reading</th>
+  </tr>
+  <tr>
+    <td>6 January 2020</td>
+    <td>Introduction (2h)</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>7 January 2020</td>
+    <td>Definitions &amp; functions</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>8 January 2020</td>
+    <td>Basic types</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>13 January 2020</td>
+    <td>Lists</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>14 January 2020</td>
+    <td>Type classes</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>15 January 2020</td>
+    <td>Recursive functions</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>20 January 2020</td>
+    <td>Higher-order functions</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>21 January 2020</td>
+    <td>Data types &amp; type aliases</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>22 January 2020</td>
+    <td>Coursework I briefing</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>27 January 2020</td>
+    <td>Lazy evaluation</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>28 January 2020</td>
+    <td><i>Fun with</i> testing</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>29 January 2020</td>
+    <td>Reasoning about programs</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>3 February 2020</td>
+    <td>Reasoning about programs (cont.)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>4 February 2020</td>
+    <td><i>Fun with</i> constructive induction</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>5 February 2020</td>
+    <td>Functors &amp; applicative functors</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>10 February 2020</td>
+    <td>Functors &amp; applicative functors (cont.)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>11 February 2020</td>
+    <td><i>Fun with</i> applicative functors</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>12 February 2020</td>
+    <td>Coursework II briefing</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>17 February 2020</td>
+    <td>Foldables</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>18 February 2020</td>
+    <td>Sequential composition</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>19 February 2020</td>
+    <td><i>No lecture.</i> </td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>24 February 2020</td>
+    <td>Sequential composition (cont.)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>25 February 2020</td>
+    <td><i>Fun with</i> sequential composition</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>26 February 2020</td>
+    <td>Input &amp; output</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>2 March 2020</td>
+    <td>Type promotion &amp; GADTs</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>3 March 2020</td>
+    <td><i>Fun with</i> IO</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>4 March 2020</td>
+    <td>Type families</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>9 March 2020</td>
+    <td>Guest lecture</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>10 March 2020</td>
+    <td><i>Fun with</i> type-level programming</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>11 March 2020</td>
+    <td>Conclusions</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<h3>Labs</h3>
+
+<p> There are ten lab sessions for this module (one a week). There are four lab groups per week and the times for different lab groups are shown below. You should register for one group through Tabula and attend those lab sessions. If you miss a lab or want to come to an extra one, you are welcome to join any other group at any time, provided that there is space. The exercises for all labs can be found in the <a href="cs141.pdf">module guide</a> or as individual PDFs for each lab below. You are also welcome to work on the coursework during the labs.</p>
+
+<table>
+  <tr>
+    <th style="border-right: 1px solid rgb(221, 221, 221); border-top: 0;">&nbsp;</th>
+    <th style="text-align: center; border-right: 1px solid rgb(221, 221, 221); border-top: 0;"><i>Monaday</i> </th>
+    <th style="text-align: center; border-right: 1px solid rgb(221, 221, 221); border-top: 0;"><i>Wednesday</i> </th>
+    <th style="text-align: center; border-right: 1px solid rgb(221, 221, 221); border-top: 0;"><i>Friday</i> </th>
+  </tr>
+  <tr>
+    <td><i>9am-10am</i> </td>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);">&nbsp;</td>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);"><a href="http://campus-cms.warwick.ac.uk/share/f6b09b5be2b413993ed5e7d67ea514c7">CS0.06</a> </td>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><i>11am-12pm</i> </td>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);">&nbsp;</td>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);"><a href="http://campus-cms.warwick.ac.uk/share/f6b09b5be2b413993ed5e7d67ea514c7">CS0.06</a> </td>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);"><a href="http://campus-cms.warwick.ac.uk/share/f6b09b5be2b413993ed5e7d67ea514c7">CS0.06</a> </td>
+  </tr>
+  <tr>
+    <td><i>1pm-2pm</i> </td>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);"><a href="http://campus-cms.warwick.ac.uk/share/f6b09b5be2b413993ed5e7d67ea514c7">CS0.06</a> </td>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);">&nbsp;</td>
+    <td style="text-align: center; vertical-align: middle; border: 1px solid rgb(221, 221, 221);">&nbsp;</td>
+  </tr>
+</table>
+
+<div style="float: right; padding: 20px;"><a href="http://joshua.dcs.warwick.ac.uk:8055/home"><img src="helix.png" style="width: 200px;" border="0" /></a></div>
+
+<table>
+  <tr>
+    <th>Week</th>
+    <th>Topic</th>
+    <th>Code</th>
+    <th>Solutions</th>
+  </tr>
+  <tr>
+    <td>Week 1</td>
+    <td><a href="lab1.pdf">Getting started</a> </td>
+    <td><a href="https://github.com/fpclass/lab1">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+  <tr>
+    <td>Week 2</td>
+    <td><a href="lab2.pdf">Types &amp; list comprehensions</a> </td>
+    <td><a href="https://github.com/fpclass/lab2">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+  <tr>
+    <td>Week 3</td>
+    <td><a href="lab3.pdf">Recursive functions</a> </td>
+    <td><a href="https://github.com/fpclass/lab3">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+  <tr>
+    <td>Week 4</td>
+    <td><a href="lab4.pdf">User-defined types</a> </td>
+    <td><a href="https://github.com/fpclass/lab4">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+  <tr>
+    <td>Week 5</td>
+    <td><a href="lab5.pdf">Lazy evaluation &amp; proofs</a> </td>
+    <td><a href="https://github.com/fpclass/lab5">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+  <tr>
+    <td>Week 6</td>
+    <td><a href="lab6.pdf">Functors</a> </td>
+    <td><a href="https://github.com/fpclass/lab6">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+  <tr>
+    <td>Week 7</td>
+    <td><a href="lab7.pdf">Applicative functors</a> </td>
+    <td><a href="https://github.com/fpclass/lab7">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+  <tr>
+    <td>Week 8</td>
+    <td><a href="lab8.pdf">Foldables</a> </td>
+    <td><a href="https://github.com/fpclass/lab8">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+  <tr>
+    <td>Week 9</td>
+    <td><a href="lab9.pdf">Effectful programming</a> </td>
+    <td><a href="https://github.com/fpclass/lab9">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+  <tr>
+    <td>Week 10</td>
+    <td><a href="lab10.pdf">Type-level programming</a> </td>
+    <td><a href="https://github.com/fpclass/lab10">GitHub</a> </td>
+    <td>&nbsp; </td>
+  </tr>
+</table>
+
+<h3>Coursework</h3>
+
+<p> There are two pieces of coursework for this module which are worth 15% and 25% of the overall module mark, respectively. Submissions should be made through Tabula for which the links are below. You can access the descriptions and the skeleton codes for both pieces of coursework straight away and are free to work on them anytime before the respective deadlines, but there is one briefing lecture for each piece of coursework (see above) which provide useful advice. </p>
+
+<table>
+  <tr>
+    <th>Coursework</th>
+    <th>Credit</th>
+    <th>Code</th>
+    <th>Submission</th>
+    <th>Due</th>
+  </tr>
+  <tr>
+    <td><a href="cswk1.pdf">Large Arithmetic Collider</a> </td>
+    <td>15%</td>
+    <td>GitHub · <a href="#" class="semihidden">zip</a> </td>
+    <td>Tabula </td>
+    <td>TBC</td>
+  </tr>
+  <tr>
+    <td><a href="cswk2.pdf">Scratch Clone</a> </td>
+    <td>25%</td>
+    <td>GitHub · <a href="#" class="semihidden">zip</a> </td>
+    <td>Tabula </td>
+    <td>TBC</td>
+  </tr>
+</table>
+
+<h3>Exam</h3>
+
+<p> There is a 2 hour exam in Term 3 which is worth 60% of the overall module mark. You will have to answer any FOUR out of six questions.</p>
+
+<table>
+  <tr>
+    <th>Past paper</th>
+    <th>Model answers</th>
+    <th>Feedback</th>
+  </tr>
+  <tr>
+    <td><a href="cs141-summer19.pdf">Summer 2019</a> </td>
+    <td>&nbsp;</td>
+    <td><a href="exam1819_feedback.pdf">Feedback</a> </td>
+  </tr>
+  <tr>
+    <td><a href="cs256-summer18.pdf">Summer 2018 (CS256)</a> </td>
+    <td>&nbsp;</td>
+    <td><a href="exam1718_feedback.pdf">Feedback</a> </td>
+  </tr>
+  <tr>
+    <td><a href="cs141-sample.pdf">Sample paper</a> </td>
+    <td><a href="cs141-sample-solutions.pdf">Model answers</a> </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<h3>Post-Exam</h3>
+
+<p>There is currently no third or fourth year module which uses Haskell. However, if you enjoyed this module, you may also enjoy reading &quot;Types and Programming Languages&quot; by Benjamin Pierce which looks at formalising programming languages and type systems. <a href="https://warwick.ac.uk/fac/sci/dcs/teaching/modules/cs325/">CS325 Compiler Design</a> is also interesting and teaches you how to construct your own compilers -- a skill which functional programmers in the industry are often expected to have! Finally, if you would like to do a project related to Haskell, programming languages (compilers, type systems, etc.), or educational tools, let me know and I would be very happy to have a chat with you to discuss potential projects.</p>
+
+<p> If you are considering a career in industry and want to work with a functional programming language, there is <a href="https://functionaljobs.com">https://functionaljobs.com</a> which aggregates such job listings. There is also a <a href="https://github.com/erkmos/haskell-companies">list of companies which use Haskell</a> which may have openings from time to time. </p>
+
+<h3>Resources &amp; links</h3>
+
+<ul>
+  <li><a href="https://warwick.rl.talis.com/modules/cs141.html">Reading list</a> </li>
+  <li><a href="https://github.com/erkmos/haskell-companies">Partial list of companies which use Haskell</a> </li>
+</ul>
+
+
+</body></html>
