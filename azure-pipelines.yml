@@ -18,5 +18,6 @@ steps:
     downloadPath: '$(System.ArtifactsDirectory)'
 
 - script: |
+    chmod +x $(System.ArtifactsDirectory)/sitebuilder-util
     $(System.ArtifactsDirectory)/sitebuilder-util edit --page=/fac/sci/dcs/teaching/material/cs141/test/ --file=material.html
   displayName: Update Sitebuilder page
