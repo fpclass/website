@@ -1,0 +1,26 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'mbg'
+    userRepository: 'mbg/sitebuilder-util'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
+
+- script: |
+    chmod +x $(System.ArtifactsDirectory)/sitebuilder-util
+    $(System.ArtifactsDirectory)/sitebuilder-util edit --page=/fac/sci/dcs/teaching/material/cs141/test/ --file=material.html
+  displayName: Update Sitebuilder page
+  env:
+    SB_USER: $(SB_USER)
+    SB_PASSWORD: $(SB_PASSWORD)
