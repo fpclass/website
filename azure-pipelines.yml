@@ -19,7 +19,7 @@ steps:
 
 - script: |
     chmod +x $(System.ArtifactsDirectory)/sitebuilder-util
-    $(System.ArtifactsDirectory)/sitebuilder-util edit --page=/fac/sci/dcs/teaching/material/cs141/test/ --file=material.html
+    $(System.ArtifactsDirectory)/sitebuilder-util edit --page=/fac/sci/dcs/teaching/material/cs141/ --file=material.html
   displayName: Update Sitebuilder page
   env:
     SB_USER: $(SB_USER)
