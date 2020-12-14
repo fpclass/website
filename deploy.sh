@@ -6,3 +6,4 @@ chmod +x $SB_UTIL
 
 $SB_UTIL edit --page=$SB_ROOT --file=material.html
 $SB_UTIL edit --page=$SB_ROOT/term3 --file=term3.html
+$SB_UTIL edit --page=$SB_ROOT/online-labs --file=online-labs.html
