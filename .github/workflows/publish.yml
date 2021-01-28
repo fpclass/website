@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Clone the repo
+      - uses: actions/checkout@v2
+
       # Initialise the ./bin directory
       - name: Initialisation 
         run: mkdir bin 
