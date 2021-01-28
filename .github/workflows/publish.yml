@@ -1,0 +1,33 @@
+name: publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Initialise the ./bin directory
+      - name: Initialisation 
+        run: mkdir bin 
+
+      # Download uow-util
+      - name: Download uow-util
+        uses: Legion2/download-release-action@v2.1.0
+        with:
+          repository: mbg/uow-apis
+          tag: 'latest'
+          path: bin
+          file: uow-util
+      
+      # Publish the files from this repository to Sitebuilder
+      - name: Publish to Sitebuilder 
+        env: 
+          UOW_USER: ${{ secrets.SB_USER }}
+          UOW_PASSWORD: ${{ secrets.SB_PASSWORD }}
+        run: |
+          sudo chmod +x ./bin/uow-util
+          ./bin/uow-util sitebuilder sync --config=sitebuilder.yaml

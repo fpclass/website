@@ -1,0 +1,10 @@
+- page: /fac/sci/dcs/teaching/material/cs141
+  content: material.html
+  properties:
+    spanRHS: true
+  files: []
+- page: /fac/sci/dcs/teaching/material/cs141/online-labs
+  content: online-labs.html
+  properties:
+    spanRHS: true
+  files: []
