@@ -34,3 +34,11 @@ jobs:
         run: |
           sudo chmod +x ./bin/uow-util
           ./bin/uow-util sitebuilder sync --config=sitebuilder.yaml
+
+      - uses: act10ns/slack@v1
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+        if: always()
