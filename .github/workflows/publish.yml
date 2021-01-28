@@ -19,6 +19,7 @@ jobs:
 
       # Download uow-util
       - name: Download uow-util
+        id: download-uow-util
         uses: Legion2/download-release-action@v2.1.0
         with:
           repository: mbg/uow-apis
@@ -28,6 +29,7 @@ jobs:
       
       # Publish the files from this repository to Sitebuilder
       - name: Publish to Sitebuilder 
+        id: publish
         env: 
           UOW_USER: ${{ secrets.SB_USER }}
           UOW_PASSWORD: ${{ secrets.SB_PASSWORD }}
@@ -35,10 +37,9 @@ jobs:
           sudo chmod +x ./bin/uow-util
           ./bin/uow-util sitebuilder sync --config=sitebuilder.yaml
 
-      - uses: act10ns/slack@v1
+      - uses: iRoachie/slack-github-actions@v2.3.0
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
           status: ${{ job.status }}
-          steps: ${{ toJson(steps) }}
         if: always()
