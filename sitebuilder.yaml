@@ -8,3 +8,8 @@
   properties:
     spanRHS: true
   files: []
+- page: /fac/sci/dcs/teaching/material/cs141/solutions
+  content: solutions.html
+  properties:
+    spanRHS: true
+  files: []
