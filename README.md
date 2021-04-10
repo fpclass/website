@@ -1,6 +1,6 @@
 # CS141 Website
 
-This repository contains the HTML sources for the CS141 Sitebuilder website. All commits to the `master` branch are automatically uploaded to Sitebuilder using [`sitebuilder-util`](https://github.com/mbg/sitebuilder-util) using GitHub Actions.
+This repository contains the HTML sources for the CS141 Sitebuilder website. All commits to the `master` branch are automatically uploaded to Sitebuilder using [`sitebuilder-util`](https://github.com/mbg/sitebuilder-util) running on GitHub Actions.
 
 ## Contributing 
 
